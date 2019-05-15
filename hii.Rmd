@@ -5,7 +5,7 @@ date: "2019/5/16"
 output: html_document
 ---
 # Introduction
-### Caculating with R
+### Caculating with R u
 ```{r}
 5+49
 3-8
