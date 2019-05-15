@@ -1,0 +1,73 @@
+---
+title: '5'
+author: "AnitaChang"
+date: "2019/5/16"
+output: html_document
+---
+# Introduction
+### Caculating with R
+```{r}
+5+49
+3-8
+3*5
+31%%7
+31%/%7
+```
+
+###  vector
+
+c()function is used to collect things together into a vector
+```{r}
+c(0,7,8)
+```
+create sequences
+```{r}
+numbers5to20<-5:20
+c(numbers5to20,7)
+```
+
+###  Extracting elements from vectors
+
+display the 8th element of mess
+```{r}
+mess<-c(numbers5to20,7)
+mess[8]
+```
+
+find the third through eleventh elements
+```{r}
+mess[-(3:11)]
+```
+
+###  Vector arithmetic
+
+multiply all element
+```{r}
+x<-c(0,7,8)
+x*3
+```
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
