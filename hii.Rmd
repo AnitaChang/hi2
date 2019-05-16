@@ -178,21 +178,24 @@ qqplot(X,D,main="D is skewed to the right.")
 
 
 ### Adding to plots
+**points(x,y,....)** <br> 
+**lines(x,y,.....)adds line segements**  <br>
+**text (x,y,labels,...)adds text into the graph**  <br>
+**abline(a,b,.....)adds the line y=a+bx**  <br>
+**abline(h=y,.....)adds a horizontal line**  <br>
+**abline(v=x,.....)adds a vertical line**  <br>
+**polygon(x,y,....)adds a closed and possibly filled polygon**  <br>
+**segements(x,y,x1,x2,...)draws arrows** <br>
+**symbols(x,y,....)draws circles,squares,thermometers** <br>
+**legend(x,y,legend,....)draws a legend <br> **
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+##  Linear algebra
 
-```{r cars}
-summary(cars)
-```
+### Vectors and matrix
+#### **matrix(data,nrow,ncol)** <br>
+#### **cbind(d1,d2,....)<br>
+#### **rbind(d1,d2,....)<br>
 
-## Including Plots
 
-You can also embed plots, for example:
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
