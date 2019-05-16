@@ -76,7 +76,19 @@ repeat the patter1,3 times and 4,twice
 ```{r}
 rep(c(1,4),c(3,2))
 ```
+repeat each value twice
+```{r}
+rep(seq(2,20,2),rep(2,10))
+```
 
+### Character vectors
+#### Scalers and vectors can be made up of strings of characters instead of numbers.All element of a vector must be of **the same type**.
+This appended some new elements to colors.
+```{r}
+colors<-c("red","yellow","blue")
+more.colors<-c(colors,"green","magenta","cyan")
+more.colors
+```
 
 ## R Markdown
 
