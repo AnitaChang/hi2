@@ -164,7 +164,7 @@ plot(x,y,main="Poisson versus Normal")
 ```
 ### QQplot
 Quantile-quantile plot are a type of scatterplot used to compare the distribution of two groups or to compare a sample with a reference distribution.
-```{r,out.width="50%",out.height="50%",fig.pos="h"}
+```{r,out.width="50%",out.height="50%",results="hold",fig.sep=c(2,2)}
 X<-rnorm(1000)
 A<-rnorm(1000)
 qqplot(X,A,main="A and X are the same.")
@@ -175,6 +175,9 @@ qqplot(X,C,main="C has heavler tails.")
 D<-exp(rnorm(1000))
 qqplot(X,D,main="D is skewed to the right.")
 ```
+
+
+### Adding to plots
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
