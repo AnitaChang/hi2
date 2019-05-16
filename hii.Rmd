@@ -1,11 +1,10 @@
 ---
-title: '5'
-author: "AnitaChang"
-date: "2019/5/16"
+title: 'Markdown homework'
+author: "張慧湘"
 output: html_document
 ---
-# Introduction
-### Caculating with R ub
+## Introduction to R language
+### Caculating with R 
 ```{r}
 5+49
 3-8
@@ -110,6 +109,19 @@ m
 see the element of the first row,second column
 ```{r}
 m[1,2]
+```
+#### A more general way to store data is in an array.Arrays have multiple indices,and are created using the array function.
+```{r}
+a<-array(1:24,c(3,4,2))
+a
+```
+### Data frames
+#### **frame()** function is to construct data frames from vectors.
+```{r}
+colors<-c("red","yellow","blue")
+numbers<-c(1,2,3)
+colors.and.numbers<-data.frame(colors,numbers,more.numbers=c(4,5,6))
+colors.and.numbers
 ```
 
 ## R Markdown
