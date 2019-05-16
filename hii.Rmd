@@ -65,6 +65,19 @@ y^x
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+### simple patterned vectors
+
+#### Patterned vectors can also be produced using **seq()** function as wel as **rep()** function. <br> Repeated patterns are obtained using ** rep()**.
+
+```{r}
+rep(seq(2,20,by=2),2)
+```
+repeat the patter1,3 times and 4,twice
+```{r}
+rep(c(1,4),c(3,2))
+```
+
+
 ## R Markdown
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
