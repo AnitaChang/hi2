@@ -124,6 +124,26 @@ colors.and.numbers<-data.frame(colors,numbers,more.numbers=c(4,5,6))
 colors.and.numbers
 ```
 
+### Built in graphics functions
+Two basiic plot are the histogram and the scatterplot.
+
+
+```{r,fig.width=5,fig.height=5,fig.align="center",fig.show="asis"}
+x<-c(12,15,13,20,14,16,10,10,8,15)
+hist(x)
+x<-seq(1,10)
+y<-x^2-10*x
+plot(x,y)
+
+```
+
+## Programming statistical graphics
+### High level plots
+The **beside=TRUE** arguement causes the values in each column to be plotted side by side.  **legend=TRUE** causes the legend in the top right to be added.
+```{r,fig.align="center"}
+barplot(VADeaths,beside=TRUE,legend=TRUE,ylim = c(0,90),ylab = "Deaths per 1000",main="Death rates in Virginia")
+```
+
 ## R Markdown
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
