@@ -143,8 +143,38 @@ The **beside=TRUE** arguement causes the values in each column to be plotted sid
 ```{r,fig.align="center"}
 barplot(VADeaths,beside=TRUE,legend=TRUE,ylim = c(0,90),ylab = "Deaths per 1000",main="Death rates in Virginia")
 ```
+### Pie charts
+```{r,fig.align="center"}
+groupsizes<-c(18,30,32,10,10)
+labels<-c("A","B","C","D","F")
+pie(groupsizes,labels,col=c("grey40","white","grey","black","grey90"))
+```
+### histograms
+**hist()** is the main way to plot histograms.
+```{r}
+x<-rnorm(100)
+hist(x)
+```
+### Scaterplots
+```{r,fig.align="center"}
+x<-rnorm(100)
+y<-rpois(100,30)
+plot(x,y,main="Poisson versus Normal")
 
-## R Markdown
+```
+### QQplot
+Quantile-quantile plot are a type of scatterplot used to compare the distribution of two groups or to compare a sample with a reference distribution.
+```{r,out.width="50%",out.height="50%",fig.pos="h"}
+X<-rnorm(1000)
+A<-rnorm(1000)
+qqplot(X,A,main="A and X are the same.")
+B<-rnorm(1000,mean=3,sd=2)
+qqplot(X,B,main="B is rescaled X.")
+C<-rt(1000,df=2)
+qqplot(X,C,main="C has heavler tails.")
+D<-exp(rnorm(1000))
+qqplot(X,D,main="D is skewed to the right.")
+```
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
