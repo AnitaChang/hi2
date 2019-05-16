@@ -65,7 +65,7 @@ y^x
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-### simple patterned vectors
+### Simple patterned vectors
 
 #### Patterned vectors can also be produced using **seq()** function as wel as **rep()** function. <br> Repeated patterns are obtained using ** rep()**.
 
@@ -88,6 +88,28 @@ This appended some new elements to colors.
 colors<-c("red","yellow","blue")
 more.colors<-c(colors,"green","magenta","cyan")
 more.colors
+```
+#### **paste()** This is building up strings by connection.
+```{r}
+paste(colors,"flowers")
+```
+The sep() controls what goes between the components being pasted together.
+```{r}
+paste("several",colors,"s",sep="")
+```
+**collpase()** to paste() allows all the components of the resulting vector to be collapsed into a single string.
+```{r}
+paste("I like",colors,collapse = ",")
+```
+### Matrics and arrays
+#### To arrange values into a matrix , we use the **matrix()** function.
+```{r}
+m<-matrix(1:6,nrow=2,ncol=3)
+m
+```
+see the element of the first row,second column
+```{r}
+m[1,2]
 ```
 
 ## R Markdown
